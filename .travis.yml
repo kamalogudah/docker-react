@@ -4,3 +4,6 @@ services:
 
 before_install:
   - docker build -t kamalogudah/docker-react - Dockerfile.dev .
+
+script:
+  - docker run kamalogudah/docker-react npm test -- --coverage
